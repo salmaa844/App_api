@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ApiActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Convert Currency"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="#7AA88CE1"
+        android:textColor="#fff"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/money" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="192dp"
+            android:layout_height="57dp"
+            android:layout_margin="16dp"
+            android:hint="Enter Amount"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerCurrencies"
+            android:layout_width="182dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/editTextAmount"
+            android:layout_marginTop="16dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCurrencies"
+        android:layout_margin="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Convert"
+        android:background="#8ACFA4DA"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"/>
+    </ScrollView>
+</LinearLayout>

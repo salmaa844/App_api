@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".prayertime">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Prayer Time"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="#7AA88CE1"
+        android:textColor="#fff"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mosque" />
+
+    <Button
+        android:id="@+id/buttonGetTimings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:text="Get Prayer Timings" />
+
+
+
+        <TextView
+            android:id="@+id/textViewFajr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonGetTimings"
+            android:layout_margin="16dp"
+            android:text="Fajr: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDhuhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFajr"
+            android:layout_margin="16dp"
+            android:text="Dhuhr: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewAsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDhuhr"
+            android:layout_margin="16dp"
+            android:text="Asr: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewMaghrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAsr"
+            android:layout_margin="16dp"
+            android:text="Maghrib: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewIsha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMaghrib"
+            android:layout_margin="16dp"
+            android:text="Isha: "
+            android:textSize="18sp" />
+
+
+
+</LinearLayout>
